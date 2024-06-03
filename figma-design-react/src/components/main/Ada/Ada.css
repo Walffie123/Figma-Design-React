@@ -1,0 +1,42 @@
+.ada-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: white;
+    background-image: url(../../../constants/Ada.png);
+    background-size: cover;
+    height: 487px;
+    gap: 30px;
+    border-radius: 15px;
+    height: 387px;
+    flex-shrink: 0;
+}
+
+.ada-container h2 {
+    color: #FFF;
+    font-family: Roboto;
+    font-size: 40px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 52px;
+    /* 130% */
+}
+
+.startpack_button {
+    padding: 10px;
+    width: 192px;
+    height: 50px;
+    flex-shrink: 0;
+    border-radius: 23px;
+    border: 2px solid #FFF;
+    margin: 20px;
+    background-color: transparent;
+    cursor: pointer;
+}
+
+.startpack_button:hover {
+    background-color: white;
+    color: black;
+}

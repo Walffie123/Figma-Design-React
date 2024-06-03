@@ -1,0 +1,79 @@
+.priceplan-container {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    font-family: 'Roboto', serif;
+    gap: 80px;
+    flex-shrink: 0;
+}
+
+.card-container {
+    display: flex;
+    flex-direction: row;
+    justify-self: space-between;
+    flex-shrink: 0;
+}
+
+.card-subtitle {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-radius: 0px 0px 8px 8px;
+    background: #FFF;
+    text-align: center;
+    width: 362px;
+    height: 436px;
+    flex-shrink: 0;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    transition: 0.3s;
+}
+
+.card-subtitle h2 {
+    font-size: 1.5em;
+    margin: 30px;
+    color: #16133E;
+    font-family: Roboto;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 32px;
+    /* 133.333% */
+
+}
+
+.card-subtitle p:first-of-type {
+    font-family: Roboto;
+    font-size: 40px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 52px;
+}
+
+.card-subtitle p:last-of-type {
+    color: #87A1B6;
+    text-align: center;
+    font-family: Roboto;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 28px;
+    margin: 20px 0;
+    width: 209px;
+    /* 175% */
+}
+
+.start-button {
+    width: 181px;
+    height: 50px;
+    flex-shrink: 0;
+    border-radius: 23px;
+    border: 2px solid #16133E;
+    background: #FFF;
+    box-shadow: 0px 2px 35px 0px rgba(0, 0, 0, 0.03);
+    cursor: pointer;
+}
+
+.start-button:hover {
+    color: #FFF;
+    background: #16133E;
+}

@@ -1,0 +1,82 @@
+.feature-container {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    font-family: 'Roboto', serif;
+    gap: 80px;
+    flex-shrink: 0;
+    padding: 20px;
+    /* Thêm khoảng cách để nội dung không dính vào cạnh */
+    box-sizing: border-box;
+}
+
+.feature-container h1 {
+    color: #87A1B6;
+    font-size: 20px;
+    /* Căn giữa tiêu đề */
+}
+
+.feature-container p {
+    /* Đặt margin để đoạn văn bản ở giữa */
+    max-width: 700px;
+    /* Giới hạn chiều rộng tối đa */
+}
+
+.feature-section {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.left-feature,
+.right-feature {
+    position: relative;
+    flex: 1;
+    min-width: 300px;
+}
+
+.left-feature img,
+.right-feature img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+    display: block;
+}
+
+.feature-section p {
+    position: absolute;
+    color: white;
+    font-family: Roboto;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 32px;
+    bottom: 1em;
+    padding-left: 1em;
+    margin: 0;
+    width: calc(100% - 2em);
+    /* Để tránh đoạn văn bản bị tràn ra ngoài */
+}
+
+/* Media queries cho responsive */
+@media (max-width: 768px) {
+    .feature-section {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .left-feature,
+    .right-feature {
+        min-width: 100%;
+        margin-bottom: 20px;
+    }
+
+    .feature-section p {
+        font-size: 18px;
+        line-height: 24px;
+        padding-left: 10px;
+        padding-right: 10px;
+        text-align: center;
+    }
+}

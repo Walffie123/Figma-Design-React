@@ -1,0 +1,46 @@
+header {
+    height: 86px;
+    flex-shrink: 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid #EFEEF3;
+    padding: 10px 100px;
+}
+
+ul {
+    display: flex;
+    justify-content: space-between;
+    width: 33.3%;
+}
+
+a {
+    text-decoration: none;
+    color: #000;
+    color: #000;
+    font-family: 'Roboto', serif;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 16px;
+}
+
+
+header>div {
+    flex: 1;
+    /* Ensure divs take up equal space */
+}
+
+header>div:last-child {
+    display: flex;
+    justify-content: flex-end;
+    gap: 10px;
+}
+
+.auth-btn {
+    border-radius: 8px;
+    border: 2px solid #16133E;
+    padding: 10px 20px;
+    flex-shrink: 0;
+    cursor: pointer;
+}
